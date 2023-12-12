@@ -1,0 +1,10 @@
+Apontamentos - TP POO - 16/11/23
+
+* - um ponteiro para uma classe é útil para trabalhar com classes abstratas
+& - se quisermos atualizar algo ao chamar
+
+vetor<type>  --  funcoes para utilizar com vetores:
+    -new() -- 
+    -push_back() -- 
+    -
+

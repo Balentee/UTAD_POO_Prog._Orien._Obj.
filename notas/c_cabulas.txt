@@ -1,0 +1,97 @@
+Bibliotecas:
+
+    #include <iostream> // Input/Output
+        Input and Output Streams(cout/cin)
+        Stream Operators (>> and <<)
+        Standard Stream Objects(clog/cin)
+        Namespace Usage (std)
+
+    #include <iomanip> //Formatting
+        std::setw
+        std::setprecision
+        std::fixed
+        std::scientific
+        std::setfill
+
+    #include <fstream> // Filestreams
+        ifstream (Input File Stream)
+        ofstream (Output File Stream)
+        fstream (File Stream)   
+
+Output:
+    cout, análogo ao stdout;
+    << Operador insersor;
+        exem.: cout << "Hello"
+
+Input:
+    cin, análogo ao stdin,
+    >> Operador extractor
+        exem.: cin >> "Your name"
+    
+Manipuladores de input/output:
+
+    endl = \n 
+        >Manipulador usado para mudar de linha e limpar o buffer
+            exem.: cout << "Escreva o seu nome:" << endl;
+
+    setw - se string menor que x em setw(x), enche com espaços à esquerda else fica igual
+        >Manipulador que define a largura do campo atribuído para o output. A largura do campo
+        determina o número mínimo de caracteres a serem escritos na representação de saída. (<iomanip>)
+        exem.: 
+    
+    setfill - enche o setw com o caracter escolhido
+        >Usa o caractere de preenchimento nas operações de inserção de output para preencher
+        espaços quando os resultados devem ser preenchidos na largura do campo.
+            exem.: cout<< setfill('-')<< setw(10) <<11<< endl;
+
+    setprecision – escolher nº de casas decimais a serem exibidas
+        >Define o número total de dígitos a serem exibidos quando são impressos números de
+        virgula flutuante.
+            exem.: cout << setprecision(2) << pi << endl; 
+            output: 3.14
+    
+Escrita e leitura de ficheiros:
+    ifstream - lê data dos ficheiros (modo leitura)
+
+    ofstream - escreve data nos ficheiros (modo escrita)
+
+    fstream - modo leitura + modo escrita
+
+Classes:
+    Declaração de Classe:
+        >Uma classe é um modelo para criar objetos com membros de dados e funções-membro.
+        exem.:
+            class MinhaClasse  {
+                // ...membros...
+            };
+    
+    Especificadores de Acesso aos Membros:
+        >Os especificadores de acesso controlam a visibilidade dos membros (público, privado, protegido).
+        exem.:
+            class MinhaClasse {
+            public:
+                int meuInteiro; // Membro de dados público
+            private:
+                double meuDuplo; // Membro de dados privado
+            };
+
+    Definição de Funções-Membro:
+        >Defina funções-membro fora da classe usando o operador de resolução de escopo.
+        exem.:
+            void MinhaClasse::definirDados(int i, double d) {
+                // Definição da função
+            }
+
+    Criação de Objetos:
+        >Crie objetos de uma classe especificando o nome da classe seguido pelo nome do objeto.
+        exem.:
+            MinhaClasse obj1; // Criação de objeto
+
+    Acesso a Membros:
+        >Acesse membros da classe usando o operador de ponto (.).
+        exem.:
+            obj1.definirDados(42, 3.14); // Acesso a uma função-membro
+            int valor = obj1.meuInteiro; // Acesso a um membro de dados              
+
+For:
+    - for(type variable : range) - type é o tipo da var/ variable é onde fica o valor de cada range / range é o alcance dos elementos a iterar

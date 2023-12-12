@@ -1,0 +1,4 @@
+USO
+
+Exemplo:
+"a pessoa usa o carro mas não é caracterizada pelo carro e sim pelo nome, idade"

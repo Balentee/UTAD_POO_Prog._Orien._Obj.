@@ -1,0 +1,6 @@
+25023;Ferragem;Joca Gaio;20/9/1987;Rua do meio n 4;
+25024;Comercial;Ana Rola;23/2/1990;Rua da esquerda n3;
+25025;Paneleiro;Jonas Culatra;13/05/1917;Rua da direita n 2;
+25026;Chulo;Joni Rato;28/5/2004;Morada do caralho;
+25027;Passareiro;Vasco Mais Cedo;1/4/1969;Na puta que o pariu;
+25028;Cabeludo;Berna Rei;28/12/1970;No caralho que o foda;

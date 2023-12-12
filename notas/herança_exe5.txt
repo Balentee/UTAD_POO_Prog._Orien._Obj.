@@ -1,0 +1,7 @@
+class herda a classe pessoa com
+#include "Pessoa.h"
+
+usa se assim:
+
+class x:
+    public Pessoa

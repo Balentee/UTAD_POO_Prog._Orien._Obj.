@@ -1,0 +1,3 @@
+Saber+:
+    - ver sobre o "this->"
+    -

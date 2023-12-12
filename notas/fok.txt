@@ -1,0 +1,10 @@
+no *.cpp
+/*int Data::fok(){
+    int die, n;
+    die = n;
+    cin >> n;
+    n = die;
+}*/
+
+no *.h :
+//int fok();
