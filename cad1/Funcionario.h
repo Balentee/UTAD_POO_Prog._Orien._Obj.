@@ -38,6 +38,6 @@ public:
     //readfile
     void Readfile(ifstream &is);
     //exe06 - calcula ordenado
-    //virtual void Calcula_ordenado();
+    virtual void Calcula_ordenado();
 };
 #endif
