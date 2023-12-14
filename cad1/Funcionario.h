@@ -37,7 +37,5 @@ public:
     void Savefile(ofstream &os);
     //readfile
     void Readfile(ifstream &is);
-    //exe06 - calcula ordenado
-    virtual void Calcula_ordenado();
 };
 #endif
