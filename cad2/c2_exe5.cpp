@@ -3,18 +3,18 @@
 #include <fstream>
 #include <string>
 #include <unistd.h> //for sleep ;_;
-#include "Funcionario.h"
-#include "Funcionario.cpp"
-#include "Pessoa.h"
-#include "Pessoa.cpp"
-#include "Data.h"
-#include "Data.cpp"
+#include "C:/Users/Tiago Valente/poo/cad1/headers1/Funcionario.h"
+#include "C:/Users/Tiago Valente/poo/cad1/headers1/Funcionario.cpp"
+#include "C:/Users/Tiago Valente/poo/cad1/headers1/Pessoa.h"
+#include "C:/Users/Tiago Valente/poo/cad1/headers1/Pessoa.cpp"
+#include "C:/Users/Tiago Valente/poo/cad1/headers1/Data.h"
+#include "C:/Users/Tiago Valente/poo/cad1/headers1/Data.cpp"
 
 #define new_morada_a "Rua do meio n 4"
 #define new_setor_a "Ferragem"
 
 using namespace std;
-/**/
+
 void Swap(Funcionario *x, Funcionario *y)
 {
 	Funcionario	aux;
@@ -36,13 +36,13 @@ void SelectionSort(Funcionario *A, int size)
 		Swap(A + aux, A + i);
 	}
 }
-/**/
+
 int main(){
     cout << "Exercicio 5\n";
     //Funcionario(int nf, string s, Pessoa p)
     Funcionario a(25023,"Pintura","Joca Gaio", Data(20,9,1987),"Rua da direita n2");
     Funcionario b(25023,"Comercial","Ana Rola",Data(4,2,1990),"Rua da esquerda n3");
-    /*
+    
     cout << "Exercicio 5.5" << endl << endl;
     a.Show();
     cout << endl << endl;
@@ -100,7 +100,7 @@ int main(){
     cout << "Exercicio 5.12 e 5.13" << endl << endl;
     int contador = 0;
     ifstream ifile;
-    string nomeFicheiro;
+    nomeFicheiro = "";
     Funcionario vector[100];
     cout << "Ler Dados de um ficheiro" << endl;
     cout << "Nome do ficheiro (.txt): ";
