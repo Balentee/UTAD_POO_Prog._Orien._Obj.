@@ -1,0 +1,4 @@
+
+vector<Myclass> lista -> vetor DE objetos 
+
+vector<Myclass*> lista -> vetor COM objetos (aponta para eles, nao estao propriamente no vetor)

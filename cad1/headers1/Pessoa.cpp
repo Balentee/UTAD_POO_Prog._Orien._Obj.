@@ -3,7 +3,7 @@
 void Pessoa::Show(){
     cout << GetNome() << ";";
     data.Show();
-    cout << ";" << GetMorada();
+    cout << ";" << GetMorada() << ";";
 }
 
 void Pessoa::Readk(){

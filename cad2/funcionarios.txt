@@ -1,3 +1,6 @@
-O:Jonas Culatra; 20/9/1987; Rua da direita n 2;25023; Pintura;1100;20;sim;
-A:Joni Rato;4/2/1990; Rua da esquerda n 3;25024; Comercial;900;0;
-O:Luis Carlos; 1/12/1985; Rua Central n22;10000; Ferragem;1100;0;nao;
+O:25023;Ferragem;Joca Gaio;20/9/1987;Rua do meio n 4;1100;0;nao;
+A:25026;Chulo;Joni Rato;28/5/2004;Morada do caralho;2500;10;
+O:25024;Comercial;Ana Rola;23/2/1990;Rua da esquerda n3;1000;24;sim;
+A:25025;Paneleiro;Jonas Culatra;13/05/1917;Rua da direita n 2;2000;4;
+A:25027;Passareiro;Vasco Mais Cedo;1/4/1969;Na puta que o pariu;10000;0;
+O:25028;Cabeludo;Berna Rei;28/12/1970;No caralho que o foda;5000;10;sim;

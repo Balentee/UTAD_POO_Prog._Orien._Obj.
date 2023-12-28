@@ -4,7 +4,7 @@
 #include <iomanip>
 #include <fstream>
 #include <string>
-#include "Operario.cpp"
+#include "Funcionario.h"
 
 class Operario : public Funcionario{
 private:
@@ -12,14 +12,16 @@ private:
 public:
     Operario();
     Operario(int _num_func, string _setor, string _nome, Data _data, string _morada, float _ord_base, int _h_extra, float _p_hora_extra, bool _f_turno);
-    ~Operario();
     inline void SetTurno(bool _f_turno){
         f_turno = _f_turno;
     }
     inline bool GetTurno(){
         return f_turno;
     }
+    void Show();
+    void Readk();
     float Calcula_ordenado();
+    void Readfile(ifstream &is);
 };
 
 #endif

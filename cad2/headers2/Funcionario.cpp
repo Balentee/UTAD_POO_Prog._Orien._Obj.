@@ -39,8 +39,6 @@ void Funcionario::SetFuncionario(){
     cin >> ord_base;
     cout << " Indroduza as horas extra:";
     cin >> h_extra;
-    cout << " Indroduza o preco das horas extra:";
-    cin >> p_hora_extra;
 
 }
 
@@ -64,8 +62,6 @@ istream & operator >> (istream &is, Funcionario &funcionario){
     is >> funcionario.ord_base;
     cout << " Indroduza as horas extra:";
     is >> funcionario.h_extra;
-    cout << " Indroduza o preco das horas extra:";
-    is >> funcionario.p_hora_extra;
     return is;
 }
 
@@ -88,6 +84,4 @@ void Funcionario::Readfile(ifstream &is){
     ord_base = atof(aux);
     is.getline(aux, sizeof aux, ';');
     h_extra = atoi(aux);
-    is.getline(aux, sizeof aux, ';');
-    p_hora_extra = atof(aux);
 }

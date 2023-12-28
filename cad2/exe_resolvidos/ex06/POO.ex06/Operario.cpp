@@ -46,7 +46,7 @@ void Operario::Show()
 	}
 	else
 	{
-		cout << "Não;";
+		cout << "Nï¿½o;";
 	}
 }
 
@@ -95,6 +95,6 @@ void Operario::SaveFile(ofstream & os)
 	}
 	else
 	{
-		os << "não;";
+		os << "nï¿½o;";
 	}
 }
