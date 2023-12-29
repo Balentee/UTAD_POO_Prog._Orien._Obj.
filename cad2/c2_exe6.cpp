@@ -18,6 +18,8 @@
 
 using namespace std;
 
+//nota: endl é desnecessário em maior parte dos casos aqui :l
+
 //Inicializar metodos
 void LerFicheiro(vector<Funcionario*> &Lista);
 void CalcularOrdenados(vector<Funcionario*> &Lista);
