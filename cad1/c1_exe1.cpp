@@ -43,7 +43,7 @@ void exe1_3(){
     cout << setw(10) << 11 << endl;
     cout << setw(10) << 23222 << endl;
     cout << setw(10) << 1234567891011 << endl;
-    cout << setfill('-')<< setw(10) << 11 << endl;
+    cout << setfill('-') << setw(10) << 11 << endl;
 }
 
 // 1.4 - Exemplo do uso do manipulador setprecision (e setf)
@@ -59,15 +59,15 @@ void exe1_4(){
 
 
 int main (){
-    // exe1_1();
-    // system("pause");
-    // system("cls");
-    // exe1_2();
-    // system("pause");
-    // system("cls");
-    // exe1_3();
-    // system("pause");
-    // system("cls");
+    exe1_1();
+    system("pause");
+    system("cls");
+    exe1_2();
+    system("pause");
+    system("cls");
+    exe1_3();
+    system("pause");
+    system("cls");
     exe1_4();
     
     system("pause");

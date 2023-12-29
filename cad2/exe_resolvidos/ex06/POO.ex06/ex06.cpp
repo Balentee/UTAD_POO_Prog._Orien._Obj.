@@ -4,7 +4,7 @@
 #include <vector>
 #include <clocale>
 
-//todos os metodos recebem a lista de funcionarios em referencia para poder permitir modificações se necessário
+//todos os metodos recebem a lista de funcionarios em referencia para poder permitir modificaï¿½ï¿½es se necessï¿½rio
 void LerFicheiro(vector<Func*> &Lista);
 void CalcularOrdenados(vector<Func*> &Lista);
 void PesquisaFuncionario(vector<Func*> &Lista);
@@ -20,21 +20,21 @@ int main()
 	setlocale(LC_ALL, ""); //para apresentar os acentos e tils 
 
 	/*
-	Este exercicio usa a classe vector em detrimento da abordagem comum de vectores estátivos (ex: int J[10] )
+	Este exercicio usa a classe vector em detrimento da abordagem comum de vectores estï¿½tivos (ex: int J[10] )
 	a classe vector permite criar um objecto vector que armazena dinamicamente os valores que acrescentamos ao fim do vector (com o metodo Push_back()) 
-	e vai crescer e diminuir a medida que adicionamos ou removemos (com o metodo erase) posições nesse vector).
-	como a classe vector é dinamica, ele possui um metodo para nos informar de quantos objectos estão no vector nesse instante ( .size() )
+	e vai crescer e diminuir a medida que adicionamos ou removemos (com o metodo erase) posiï¿½ï¿½es nesse vector).
+	como a classe vector ï¿½ dinamica, ele possui um metodo para nos informar de quantos objectos estï¿½o no vector nesse instante ( .size() )
 
-	A dclaração do vector tendo por base templates, o que nos permite ter um vector para o tipo de classe que quisermos.
+	A dclaraï¿½ï¿½o do vector tendo por base templates, o que nos permite ter um vector para o tipo de classe que quisermos.
 
 	vector<int> L;
 	vector<string> J;
 	vector<Operario> M;
 
-	ou Seja, vector<T>, onde T é o nome da classe ou tipo que queremos criar o objecto.
+	ou Seja, vector<T>, onde T ï¿½ o nome da classe ou tipo que queremos criar o objecto.
 	*/
 	   
-	vector<Func*> Lista; //objcto da classe vector que permite armazenar apontadores do tipo Func*, o que permite alocar Operarios e Administrativos devido à relação de herança
+	vector<Func*> Lista; //objcto da classe vector que permite armazenar apontadores do tipo Func*, o que permite alocar Operarios e Administrativos devido ï¿½ relaï¿½ï¿½o de heranï¿½a
 	
 
 
@@ -43,16 +43,16 @@ int main()
 	{
 		cout << endl << endl << " ------    Bem Vindo ao Sistema XPTO     -----  " << endl
 			<< "\t 1 - Ler Ficheiro" << endl
-			<< "\t 2 - Calcular e apresentar o ordenado de todos os funcionários." << endl
-			<< "\t 3 - Pesquisar um funcionário pelo seu número." << endl
-			<< "\t 4 - Alterar o ordenado base de um funcionário, identificado pelo seu número" << endl
+			<< "\t 2 - Calcular e apresentar o ordenado de todos os funcionï¿½rios." << endl
+			<< "\t 3 - Pesquisar um funcionï¿½rio pelo seu nï¿½mero." << endl
+			<< "\t 4 - Alterar o ordenado base de um funcionï¿½rio, identificado pelo seu nï¿½mero" << endl
 			<< "\t 5 - Adicionar ao vector um Operario ou Administrativo" << endl
-			<< "\t 6 - Apresentar o nome dos operários que trabalham por turnos"<< endl
-			<< "\t 7 - Eliminar do vetor um funcionário" << endl
+			<< "\t 6 - Apresentar o nome dos operï¿½rios que trabalham por turnos"<< endl
+			<< "\t 7 - Eliminar do vetor um funcionï¿½rio" << endl
 			<< "\t 8 - Guardar, num ficheiro Administrativos." << endl
 			<< "\t 9 - Guardar, num ficheiro Operarios." << endl
 			<< "\t 0 - Sair" << endl
-			<< "Escolha a opção:";
+			<< "Escolha a opï¿½ï¿½o:";
 		cin >> op;
 				 
 		switch (op)
@@ -90,7 +90,7 @@ int main()
 		}
 	}
 
-	//para não fechar a consola;
+	//para nï¿½o fechar a consola;
 	getchar();
 }
 
@@ -107,11 +107,11 @@ void LerFicheiro(vector<Func*> &Lista)
 
 	do {	
 		string tipo;
-		getline(file, tipo, ':');  //no ficheiro o tipo de funcionario é dado pelo primeiro caracter separado por : da restante linha
+		getline(file, tipo, ':');  //no ficheiro o tipo de funcionario ï¿½ dado pelo primeiro caracter separado por : da restante linha
 
 		if (tipo == "O")
 		{
-			Operario *op = new Operario(); //alocar o espaço para um operario
+			Operario *op = new Operario(); //alocar o espaï¿½o para um operario
 			op->ReadFile(file);            //preencher os dados a partir do ficheiro com o metodo readfile da classe operario.
 			Lista.push_back(op);		//guardar o operario na lista
 		}
@@ -124,7 +124,7 @@ void LerFicheiro(vector<Func*> &Lista)
 
 		file.ignore(INT16_MAX, '\n'); //para mudar para a linha seguinte
 	}
-	while (file.peek() != EOF); //repetimos até chegar o caracter seguinte ser o fim do ficheiro.	
+	while (file.peek() != EOF); //repetimos atï¿½ chegar o caracter seguinte ser o fim do ficheiro.	
 
 
 	cout << endl << "Foram lidos " << Lista.size() << " funcionarios para a Lista"; //apresentamos o resultado.
@@ -134,7 +134,7 @@ void LerFicheiro(vector<Func*> &Lista)
 
 void CalcularOrdenados(vector<Func*> &Lista)
 {
-	//para todos os funcionarios na lista vamos apresentar a informação no ecra;
+	//para todos os funcionarios na lista vamos apresentar a informaï¿½ï¿½o no ecra;
 
 	cout << endl << endl << "-----    Lista de Funcionarios    -----" << endl;
 
@@ -142,7 +142,7 @@ void CalcularOrdenados(vector<Func*> &Lista)
 	{
 		cout << Lista[i]->GetNum() << "\t"
 			<< Lista[i]->GetNome() << "\t"
-			<< Lista[i]->Calcula_Ordenado() << endl; //como o CalculaOrdenadao é um metodo virtual puro, ele vai chamar correctamente a implementação 
+			<< Lista[i]->Calcula_Ordenado() << endl; //como o CalculaOrdenadao ï¿½ um metodo virtual puro, ele vai chamar correctamente a implementaï¿½ï¿½o 
 													//do Operario, ou do Administrativo sem necessidade de Converter o objecto (dynamic_cast)
 
 	}
@@ -162,20 +162,19 @@ void PesquisaFuncionario(vector<Func*> &Lista)
 	//percorremos o vector a procura do utilizador com o numero inserido.
 	for (int i = 0; i < Lista.size(); i++)
 	{
-		
 		if (Lista[i]->GetNum() == numero)
 		{
 			//caso o numero exista, temos que converter para o tipo correcto (Operario ou Administrativo)
 
 			if (Operario *op = dynamic_cast<Operario*>(Lista[i]))
 			{
-				//se for um operario, ele vai converter neste if, e executa esta linha, caso não seja, ele não entra aqui, pois a conversão resulta em NULL
+				//se for um operario, ele vai converter neste if, e executa esta linha, caso nï¿½o seja, ele nï¿½o entra aqui, pois a conversï¿½o resulta em NULL
 				op->Show();
 			}
 
 			if (Administrativo *adm = dynamic_cast<Administrativo*>(Lista[i]))
 			{
-				//se for um Administrativo, ele vai converter neste if, e executa esta linha, caso não seja, ele não entra aqui, pois a conversão resulta em NULL
+				//se for um Administrativo, ele vai converter neste if, e executa esta linha, caso nï¿½o seja, ele nï¿½o entra aqui, pois a conversï¿½o resulta em NULL
 
 				adm->Show();
 			}
@@ -186,7 +185,7 @@ void PesquisaFuncionario(vector<Func*> &Lista)
 	}
 
 
-	cout << "Não foi encontrado o utilizador" << endl;
+	cout << "Nï¿½o foi encontrado o utilizador" << endl;
 
 }
 
@@ -208,7 +207,7 @@ void AlteraOrdenado(vector<Func*> &Lista)
 			cout << "insira o novo ordenado:";
 			float ord;
 			cin >> ord;
-			//como o metodo de alterar o ordenado pertence a classe Func não é necessário converter o objecto com o dynamic cast
+			//como o metodo de alterar o ordenado pertence a classe Func nï¿½o ï¿½ necessï¿½rio converter o objecto com o dynamic cast
 			Lista[i]->SetOrdBase(ord);
 
 			return;
@@ -216,7 +215,7 @@ void AlteraOrdenado(vector<Func*> &Lista)
 
 	}
 
-	cout << "Não foi encontrado nenhum funcionario com o numero " << numero << endl;
+	cout << "Nï¿½o foi encontrado nenhum funcionario com o numero " << numero << endl;
 
 }
 
@@ -237,7 +236,7 @@ void CriarFuncionario(vector<Func*> &Lista)
 	if (tipo == "O" || tipo == "o")
 	{
 		Operario *op = new Operario();
-		op->ReadK(); //o metodo readK permite ler a informação a partir do teclado.
+		op->ReadK(); //o metodo readK permite ler a informaï¿½ï¿½o a partir do teclado.
 		Lista.push_back(op);
 	}
 	else if (tipo == "A" || tipo == "a")
@@ -257,7 +256,7 @@ void ApresentaTurnos(vector<Func*> &Lista)
 
 	for (int i = 0; i < Lista.size(); i++) //percorremos cada um dos funcionarios
 	{
-		if (Operario *op = dynamic_cast<Operario*>(Lista[i])) // tentamos converter para operario, caso não seja possivel é porque nessa posição está um administrativo
+		if (Operario *op = dynamic_cast<Operario*>(Lista[i])) // tentamos converter para operario, caso nï¿½o seja possivel ï¿½ porque nessa posiï¿½ï¿½o estï¿½ um administrativo
 		{
 			if (op->GetTurno()) //se for um operario, vamos vereficar se ele trabalha por turno.
 			{
@@ -288,7 +287,7 @@ void RemoveFuncionario(vector<Func*> &Lista)
 	{
 		if (Lista[i]->GetNum() == numero) // se existir
 		{
-			//removemos do vector com o metodo erase, que recebe um "iterador" que aponta para a posição que queremos remover a partir do inicio.
+			//removemos do vector com o metodo erase, que recebe um "iterador" que aponta para a posiï¿½ï¿½o que queremos remover a partir do inicio.
 			Lista.erase(Lista.begin() + i);
 			
 			cout << endl << "O funcionario " << numero << " foi removido com sucesso" << endl;
@@ -312,8 +311,8 @@ void GuardarAdministrativos(vector<Func*> &Lista)
 	
 	for (int i = 0; i < Lista.size(); i++)
 	{
-		//como apenas queremos guardar administrativos, vamos tentar converter, se for possivel guardamos no ficheiro, se não for, 
-		// é um operario, então passamos a frente.
+		//como apenas queremos guardar administrativos, vamos tentar converter, se for possivel guardamos no ficheiro, se nï¿½o for, 
+		// ï¿½ um operario, entï¿½o passamos a frente.
 		if (Administrativo *adm = dynamic_cast<Administrativo*>(Lista[i]))
 		{
 			adm->SaveFile(file);
@@ -341,8 +340,8 @@ void GuardarOperarios(vector<Func*> &Lista)
 
 	for (int i = 0; i < Lista.size(); i++)
 	{
-		//como apenas queremos guardar Operarios, vamos tentar converter, se for possivel guardamos no ficheiro, se não for, 
-		// é um Administrativos, então passamos a frente.
+		//como apenas queremos guardar Operarios, vamos tentar converter, se for possivel guardamos no ficheiro, se nï¿½o for, 
+		// ï¿½ um Administrativos, entï¿½o passamos a frente.
 		if (Operario *adm = dynamic_cast<Operario*>(Lista[i]))
 		{
 			adm->SaveFile(file);

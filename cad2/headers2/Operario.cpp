@@ -15,8 +15,8 @@ void Operario::Show(){
     cout << f_turno << ";";
 }
 
-void Operario::Readk(){
-    Funcionario::Readk();
+void Operario::SetOperario(){
+    Funcionario::SetFuncionario();
     cout << "Trabalha por turno: (S/N)";
 	string op;
 	cin >> op;
@@ -36,6 +36,11 @@ float Operario::Calcula_ordenado(){
     }else{
         return GetOrdBase() * 1.25 + GetHExtra() + GetPHExtra();
     }
+}
+
+void Operario::Savefile(ofstream &of){
+	Funcionario::Savefile(of);
+	of << f_turno << ";";
 }
 
 void Operario::Readfile(ifstream & is){

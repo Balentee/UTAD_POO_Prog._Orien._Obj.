@@ -19,8 +19,9 @@ public:
         return f_turno;
     }
     void Show();
-    void Readk();
+    void SetOperario();
     float Calcula_ordenado();
+    void Savefile(ofstream &of);
     void Readfile(ifstream &is);
 };
 

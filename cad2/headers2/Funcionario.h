@@ -51,7 +51,7 @@ public:
         return p_hora_extra;
     }
     //show
-    void Show();
+    virtual void Show();
     //set funcionario
     void SetFuncionario();
     //sobrecarga >>

@@ -1,0 +1,3 @@
+25023;Ferragem;Joca Gaio;20/9/1987;Rua do meio n 4;1100;0;8;0;
+25024;Comercial;Ana Rola;23/2/1990;Rua da esquerda n3;1000;24;8;1;
+25028;Cabeludo;Berna Rei;28/12/1970;No caralho que o foda;5000;10;8;1;
