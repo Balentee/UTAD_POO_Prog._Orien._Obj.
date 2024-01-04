@@ -1,0 +1,8 @@
+O:Jonas Culatra;20/9/1987; Rua da direita n 2;25023; Pintura;1100;20;sim;
+O:Luis Carlos;1/12/1985; Rua Central n22;10000; Ferragem;1100;0;não;
+O:Zeca Estacionâncio;1/1/1985;Rua A n9;25050;Pintura;1100;15;não;
+A:Adrusila Lopes;6/6/1996;Rua E n6;25051;RecHumanos;900;0;
+O:Andre Sousa;4/5/1987;Vila Real;24328;ECT;1200;14;sim;
+A:Monica Pinheiro;20/8/1990;Porto;43230;Contabilidade;1001;10;
+A:Andre Sousa;2/3/1997;Vila Real;32334;ECT;1200;15;
+A:Andre Sousa Pinto;3/4/1980;Amarante;12345;CEO;50000;50;
